@@ -5,7 +5,6 @@ from selenium.webdriver.common.keys import Keys
 import pyautogui
 url = "https://www.instagram.com/"
 
-
 def all_execute(user, password):
     driver = webdriver.Chrome()
     driver.get(url)
