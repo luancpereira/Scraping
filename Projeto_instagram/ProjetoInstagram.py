@@ -12,13 +12,14 @@ def all_execute(user, password):
     driver.find_element(By.NAME, "username").send_keys(f'{user}' + Keys.TAB)
     driver.find_element(By.NAME, "password").send_keys(f'{password}' + Keys.ENTER)
     time.sleep(5)
+    #Transforma o navegador para modo mobile.
     driver.get(f'{url}{user}')
     pyautogui.keyDown('ctrl')
     pyautogui.keyDown('shift')
     pyautogui.press(['i'])
     pyautogui.keyUp('ctrl')
     pyautogui.keyUp('shift')
-    time.sleep(5)
+    time.sleep(1)
     pyautogui.keyDown('ctrl')
     pyautogui.keyDown('shift')
     pyautogui.press(['m'])
@@ -27,7 +28,7 @@ def all_execute(user, password):
     driver.refresh()
     time.sleep(10)
 
-    driver.quit()
+    # driver.quit()
 
 
 all_execute(user = '', password= '')
