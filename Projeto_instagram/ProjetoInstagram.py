@@ -20,7 +20,8 @@ def all_execute(user, password):
     time.sleep(3)
     driver.refresh()
     time.sleep(10)
-
+    # pyautogui.click('imagem.png')
+    # pyautogui.doubleClick()
     # driver.quit()
 
 
