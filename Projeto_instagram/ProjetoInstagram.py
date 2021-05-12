@@ -25,4 +25,4 @@ def all_execute(user, password):
     # driver.quit()
 
 
-all_execute(user = 'leh_binotto_', password= '**amigos**')
+all_execute(user = '', password= '')
