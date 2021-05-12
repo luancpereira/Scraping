@@ -14,21 +14,14 @@ def all_execute(user, password):
     time.sleep(5)
     #Transforma o navegador para modo mobile.
     driver.get(f'{url}{user}')
-    pyautogui.keyDown('ctrl')
-    pyautogui.keyDown('shift')
-    pyautogui.press(['i'])
-    pyautogui.keyUp('ctrl')
-    pyautogui.keyUp('shift')
-    time.sleep(1)
-    pyautogui.keyDown('ctrl')
-    pyautogui.keyDown('shift')
-    pyautogui.press(['m'])
-    pyautogui.keyUp('ctrl')
-    pyautogui.keyUp('shift')
+    pyautogui.hotkey('ctrl','shift','i')
+    time.sleep(5)
+    pyautogui.hotkey('ctrl','shift','m')
+    time.sleep(3)
     driver.refresh()
     time.sleep(10)
 
     # driver.quit()
 
 
-all_execute(user = '', password= '')
+all_execute(user = 'leh_binotto_', password= '**amigos**')
